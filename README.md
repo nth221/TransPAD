@@ -35,28 +35,29 @@ Moreover, to understand the prediction patterns and mechanisms of the model in t
 
 ## Experimental Setup
 
-우리는 제안하는 TransPAD의 네트워크 구조와 해당 네트워크를 주어진 데이터셋에 대해 학습과 검출을 해볼 수 있는 파이프라인 코드를 공유한다. 
-우리는 `python 3.8.12`, `pytorch 1.12.1`, `cudatoolkit 11.3.1` 버전 환경에서 실험을 진행하였다.
+We provide the network architecture of the proposed TransPAD model and share the pipeline code that enables users to train and test the network on the given dataset. 
+The Transformer code used in TransPAD references the implementation provided by [lucidrains's repository][https://github.com/lucidrains/vit-pytorch]. 
+All experiments were conducted in an environment with `Python 3.8.12`, `PyTorch 1.12.1`, and `CUDA Toolkit 11.3.1`.
 
-### 데이터셋 및 하이퍼파라미터 설정
+### Dataset and Hyperparameter Configuration
 
-실험에 필요한 데이터셋 경로와 모델의 학습 하이퍼파라미터 등 사용자가 조작할 수 있는 기본적으로 `parameters.py`에 정의되어 있다.
+The parameters that users can modify, such as the paths to the training datasets and the hyperparameters, are primarily defined in `parameters.py`
 
-- 데이터셋 설정
-  
-우리는 예를 들기 위해 논문의 실험에 사용된 Lung dataset [^4]을 기본적으로 공유한다 (datasets/lung-1vs5.csv).
-실험에 사용되는 데이터셋은 모두 각 feature를 기준으로 min-max normalization 되어야 하며, 마지막 feature는 normal과 anomaly를 구별하는 이진 레이블로 구성되어야 한다.
-이후 `.csv` 확장자로 저장된 데이터셋의 경로를 아래와 같이 지정한다.
+- Dataset Configuration
+
+As an example, we share the Lung dataset [^4] used in the experiments described in the paper (datasets/lung-1vs5.csv). 
+All datasets used in the experiments must be min-max normalized per feature, with the last feature serving as a binary label distinguishing between normal and abnormal cases. 
+The path to the dataset, saved as a `.csv` file, can be specified as follows:
 
 ```python
 # parameters.py
 dataset_root = '[PATH OF dataset.csv FILE]'
 ```
 
-- 하이퍼파라미터 설정
+- Hyperparameter Configuration
 
-모델의 default hyperparameters는 Lung dataset에 대한 논문의 실험에서 최적화된 하이퍼파라미터를 적용하였다.
-하이퍼파라미터는 마찬가지로 `parameters.py`에서 아래와 같이 수정 가능하다.
+The default hyperparameters for the model have been optimized based on the experiments conducted with the Lung dataset as described in the paper. 
+These hyperparameters can also be adjusted in `parameters.py` as shown below:
 
 ```python
 # parameters.py
@@ -71,22 +72,20 @@ hp = {
 }
 ```
 
-- 실험 결과 경로 설정
+-Setting the Experimental Results Path
 
-데이터셋과 하이퍼파라미터에 대한 설정이 끝난 이후에는 실험 결과에 대한 경로 설정이 필요하다.
-이 역시 `parameters.py`에서 `results_path`와 `exp_name`이라는 변수를 통해 설정 가능하다.
-`results_path`는 실험의 결과들이 저장되는 기본 경로를 의미하고, `exp_name`은 이번 실행할 실험의 이름을 의미한다.
+After configuring the dataset and hyperparameters, you will need to set the path for saving the experimental results. 
+This can also be done in `parameters.py` using the variables `results_path` and `exp_name`. 
+`results_path` specifies the default directory where the experimental results will be saved, and `exp_name` defines the name of the current experiment.
 
-예를 들어 아래와 같이 설정한 경우,
+For example, with the following configuration:
 ```python
 # parameters.py
 results_path = './results'
 
 exp_name = 'test'
 ```
-실험 동안 학습된 최고성능 모델은 `results/test/best_auroc_model.pt` 로 저장된다. 
-
-
+The best-performing model trained during the experiment will be saved as `results/test/best_auroc_model.pt`.
 
 
 ### References
