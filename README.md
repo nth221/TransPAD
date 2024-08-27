@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="images/transpad_logo.jpg" alt="Figure 1" width="100%">
+  <br>
+</p>
+
 # TransPAD: Transformer for Point Anomaly Detection
 
 This repository is for CIKM 2024 paper **"Transformer for Point Anomaly Detection"**.
