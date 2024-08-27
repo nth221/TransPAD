@@ -1,6 +1,6 @@
 # TransPAD: Transformer for Point Anomaly Detection
 
-This Repository is for CIKM 2024 paper **"Transformer for Point Anomaly Detection"**.
+This repository is for CIKM 2024 paper **"Transformer for Point Anomaly Detection"**.
 
 ## Introduction
 
