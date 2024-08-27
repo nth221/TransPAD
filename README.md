@@ -16,4 +16,5 @@ By leveraging an attention weight-based anomaly scoring system, _TransPAD_ offer
 
 
 ## References
+
 [^1]: Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems, 30
