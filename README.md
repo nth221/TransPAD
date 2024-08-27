@@ -44,10 +44,10 @@ Moreover, to understand the prediction patterns and mechanisms of the model in t
 우리는 예를 들기 위해 논문의 실험에 사용된 Lung dataset [^4]을 기본적으로 공유한다 (datasets/lung-1vs5.csv).
 실험에 사용되는 데이터셋은 모두 각 feature를 기준으로 min-max normalization 되어야 하며, 마지막 feature는 normal과 anomaly를 구별하는 이진 레이블로 구성되어야 한다.
 이후 .csv 확장자로 저장된 데이터셋의 경로를 아래와 같이 지정한다.
-'''python
+```python
 #parameters.py
 dataset_root = '[path of dataset.csv file]'
-'''
+```
 
 
 
