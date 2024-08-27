@@ -36,7 +36,7 @@ Moreover, to understand the prediction patterns and mechanisms of the model in t
 ## Experimental Setup
 
 We provide the network architecture of the proposed TransPAD model and share the pipeline code that enables users to train and test the network on the given dataset. 
-The Transformer code used in TransPAD references the implementation provided by [lucidrains's repository][https://github.com/lucidrains/vit-pytorch]. 
+The Transformer code used in TransPAD references the implementation provided by [lucidrains's repository](https://github.com/lucidrains/vit-pytorch). 
 All experiments were conducted in an environment with `Python 3.8.12`, `PyTorch 1.12.1`, and `CUDA Toolkit 11.3.1`.
 
 ### Dataset and Hyperparameter Configuration
