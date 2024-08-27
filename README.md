@@ -15,10 +15,10 @@ By leveraging an attention weight-based anomaly scoring system, _TransPAD_ offer
 
 ## Supplementary Experimental Results
 
-<figure style="text-align: center;">
-<img src="images/MNIST_synt.png" alt="Figure 1" width="50%">
-    <figcaption>temp</figcaption>
-</figure>
+<div style="text-align: center;">
+    <img src="images/MNIST_synt.png" alt="Figure 1" width="50%">
+    <div>temp</div>
+</div>
 
 As shown in Figure 1-(a), The paper demonstrates that anomaly localization can be achieved by utilizing the Transformer’s attention weights as anomaly scores. Additionally, it presents in the preliminaries that frame-level anomaly detection, such as anomaly detection in tabular datasets, is possible using a novel approach called random/criteria sampler (Figure 1-(b)).
 
