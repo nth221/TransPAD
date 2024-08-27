@@ -34,16 +34,20 @@ In the experiments, TransPAD was compared against existing anomaly detection met
 Moreover, to understand the prediction patterns and mechanisms of the model in the embedding space, UMAP (Uniform Manifold Approximation and Projection) [^3] was used to visualize the data embeddings at each encoder layer of TransPAD in a two-dimensional space. Additional visualization results are shared in this repository (Figure 2).
 
 ## Experimental Setup
+
 우리는 제안하는 TransPAD의 네트워크 구조와 해당 네트워크를 주어진 데이터셋에 대해 학습과 검출을 해볼 수 있는 파이프라인 코드를 공유한다. 
 우리는 python 3.8.12, pytorch 1.12.1, cudatoolkit 11.3.1 버전 환경에서 실험을 진행하였다.
 
 ### 데이터셋 및 하이퍼파라미터 설정
+
 실험에 필요한 데이터셋 경로와 모델의 학습 하이퍼파라미터 등 사용자가 조작할 수 있는 기본적으로 parameters.py에 정의되어 있다.
 
 - 데이터셋 설정
+  
 우리는 예를 들기 위해 논문의 실험에 사용된 Lung dataset [^4]을 기본적으로 공유한다 (datasets/lung-1vs5.csv).
 실험에 사용되는 데이터셋은 모두 각 feature를 기준으로 min-max normalization 되어야 하며, 마지막 feature는 normal과 anomaly를 구별하는 이진 레이블로 구성되어야 한다.
 이후 .csv 확장자로 저장된 데이터셋의 경로를 아래와 같이 지정한다.
+
 ```python
 #parameters.py
 dataset_root = '[path of dataset.csv file]'
