@@ -1,7 +1,6 @@
 <p align="center">
-  <img src="images/transpad_logo.jpg" alt="Figure 1" width="50%">
+  <img src="images/transpad_logo.jpg" alt="Figure 1" width="100%">
   <br>
-  Main Logo
 </p>
 
 # TransPAD: Transformer for Point Anomaly Detection
