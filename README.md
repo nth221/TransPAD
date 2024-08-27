@@ -49,10 +49,27 @@ Moreover, to understand the prediction patterns and mechanisms of the model in t
 이후 .csv 확장자로 저장된 데이터셋의 경로를 아래와 같이 지정한다.
 
 ```python
-#parameters.py
-dataset_root = '[path of dataset.csv file]'
+# parameters.py
+dataset_root = '[PATH OF dataset.csv FILE]'
 ```
 
+- 하이퍼파라미터 설정
+
+모델의 default hyperparameters는 Lung dataset에 대한 논문의 실험에서 최적화된 하이퍼파라미터를 적용하였다.
+하이퍼파라미터는 마찬가지로 parameters.py에서 아래와 같이 수정 가능하다.
+
+```python
+# parameters.py
+hp = {
+    'batch_size' : [BATCH SIZE],
+    'lr' : [LEARNING RATE],
+    'sequence_len' : [SEQUENCE LENGTH],
+    'heads' : {NUMBER OF HEADS},
+    'dim' : [ENCODER'S INPUT DIMENSION],
+    'num_layers' : [NUMBER OF LAYERS],
+    'layer_conf' : [LAYER CONFIGURATION: {'same', 'smaller', 'hybrid'} OPTIONS ARE AVAILABLE] 
+}
+```
 
 
 ### References
