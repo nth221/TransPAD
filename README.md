@@ -25,7 +25,11 @@ As shown in Figure 1-(a), The paper demonstrates that anomaly localization can b
 
 In the experiments, TransPAD was compared against existing anomaly detection methods across 10 benchmark tabular datasets. The results showed that TransPAD achieved up to a 24% improvement in AUROC (Area Under the Receiver Operating Characteristic Curve) compared to RDP (Random Distance Prediction) [^2], which was the best-performing method among the existing unsupervised point anomaly detection methods.
 
-![Figure 2](images/umap_visualizations.jpg)
+<p align="center">
+  <img src="images/umap_visualizations.jpg" alt="Figure 2" width="80%">
+  <br>
+  temp
+</p>
 
 Moreover, to understand the prediction patterns and mechanisms of the model in the embedding space, UMAP (Uniform Manifold Approximation and Projection) [^3] was used to visualize the data embeddings at each encoder layer of TransPAD in a two-dimensional space. Additional visualization results are shared in this repository (Figure 2).
 
