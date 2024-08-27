@@ -43,7 +43,7 @@ All experiments were conducted in an environment with `Python 3.8.12`, `PyTorch 
 
 The parameters that users can modify, such as the paths to the training datasets and the hyperparameters, are primarily defined in `parameters.py`
 
-- Dataset Configuration
+- **Dataset Configuration**
 
 As an example, we share the Lung dataset [^4] used in the experiments described in the paper (datasets/lung-1vs5.csv). 
 All datasets used in the experiments must be min-max normalized per feature, with the last feature serving as a binary label distinguishing between normal and abnormal cases. 
@@ -54,7 +54,7 @@ The path to the dataset, saved as a `.csv` file, can be specified as follows:
 dataset_root = '[PATH OF dataset.csv FILE]'
 ```
 
-- Hyperparameter Configuration
+- **Hyperparameter Configuration**
 
 The default hyperparameters for the model have been optimized based on the experiments conducted with the Lung dataset as described in the paper. 
 These hyperparameters can also be adjusted in `parameters.py` as shown below:
@@ -72,7 +72,7 @@ hp = {
 }
 ```
 
-- Setting the Experimental Results Path
+- **Setting the Experimental Results Path**
 
 After configuring the dataset and hyperparameters, you will need to set the path for saving the experimental results. 
 This can also be done in `parameters.py` using the variables `results_path` and `exp_name`. 
