@@ -72,7 +72,7 @@ hp = {
 }
 ```
 
--Setting the Experimental Results Path
+- Setting the Experimental Results Path
 
 After configuring the dataset and hyperparameters, you will need to set the path for saving the experimental results. 
 This can also be done in `parameters.py` using the variables `results_path` and `exp_name`. 
