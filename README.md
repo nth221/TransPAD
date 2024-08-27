@@ -18,7 +18,7 @@ By leveraging an attention weight-based anomaly scoring system, _TransPAD_ offer
 <p align="center">
   <img src="images/MNIST_synt.png" alt="Figure 1" width="50%">
   <br>
-  temp
+  Figure 1
 </p>
 
 As shown in Figure 1-(a), The paper demonstrates that anomaly localization can be achieved by utilizing the Transformer’s attention weights as anomaly scores. Additionally, it presents in the preliminaries that frame-level anomaly detection, such as anomaly detection in tabular datasets, is possible using a novel approach called random/criteria sampler (Figure 1-(b)).
@@ -28,7 +28,7 @@ In the experiments, TransPAD was compared against existing anomaly detection met
 <p align="center">
   <img src="images/umap_visualizations.jpg" alt="Figure 2" width="80%">
   <br>
-  temp
+  Figure 2
 </p>
 
 Moreover, to understand the prediction patterns and mechanisms of the model in the embedding space, UMAP (Uniform Manifold Approximation and Projection) [^3] was used to visualize the data embeddings at each encoder layer of TransPAD in a two-dimensional space. Additional visualization results are shared in this repository (Figure 2).
