@@ -15,7 +15,7 @@ By leveraging an attention weight-based anomaly scoring system, _TransPAD_ offer
 
 ## Supplementary Experimental Results
 
-<figure>
+<figure style="text-align: center;">
 <img src="images/MNIST_synt.png" alt="Figure 1" width="50%">
     <figcaption>이것은 프로젝트의 주요 이미지입니다.</figcaption>
 </figure>
