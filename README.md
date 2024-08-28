@@ -92,6 +92,12 @@ exp_name = 'test'
 ```
 The best-performing model trained during the experiment will be saved as `results/test/best_auroc_model.pt`.
 
+- **Run the Experiment**
+  
+If you have completely finished setting up `parameters.py`, you can start the experiment by running the following command:
+```
+python main.py
+```
 
 ### References
 
