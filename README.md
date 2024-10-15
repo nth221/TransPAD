@@ -3,15 +3,15 @@
   <br>
 </p>
 
-# TransPAD: Transformer for Point Anomaly Detection
+# TransPAD: Transformer for Point Anomaly Detection (author implementation)
 
-This repository is for CIKM 2024 paper **"Transformer for Point Anomaly Detection"**.
+This repository is for our CIKM 2024 paper **"Transformer for Point Anomaly Detection"**.
 
 ## Paper Overview
 
-In data analysis, unsupervised anomaly detection holds an important position for identifying statistical outliers that signify atypical behavior, erroneous readings, or interesting patterns across data.
+In data analysis, unsupervised anomaly detection holds an important position for identifying statistical outliers that correspond to atypical behavior, erroneous readings, or interesting patterns across data.
 The Transformer model [^1], known for its ability to capture dependencies within sequences, has revolutionized areas such as text and image data analysis.
-However, its potential for tabular data, where sequence dependencies are not inherently present, remains underexplored.
+However, its potential for tabular data, where sequential dependencies are not inherently present, remains underexplored.
 
 In this paper, we introduce a novel Transformer-based AutoEncoder framework, _TransPAD_ (Transformer for Point Anomaly Detection).
 Our method captures interdependencies across entire datasets, addressing the challenges posed with non-sequential, tabular data.
