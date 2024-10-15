@@ -5,7 +5,7 @@
 
 # TransPAD: Transformer for Point Anomaly Detection (author implementation)
 
-This repository is for our implementation of **"Transformer for Point Anomaly Detection"** (CIKM2024).
+This repository contains our implementation of **"Transformer for Point Anomaly Detection"** (CIKM2024).
 
 ## Paper Overview
 
