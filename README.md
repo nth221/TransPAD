@@ -99,6 +99,17 @@ If you have completely finished setting up `parameters.py`, you can start the ex
 python main.py
 ```
 
+### Citation
+If you utilize this code, please cite the following paper and star this repository:
+```bibtex
+@inproceedings{kim2024transpad,
+  title={Transformer for Point Anomaly Detection},
+  author={Kim, Harim and Lee, Chang Ha and Hong, Charmgil},
+  booktitle={Proceedings of the 33rd ACM International Conference on Information and Knowledge Management},
+  year={2024},
+}
+```
+
 ### References
 
 [^1]: Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems, 30.
