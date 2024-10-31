@@ -102,11 +102,12 @@ python main.py
 ### Citation
 If you utilize this code, please cite the following paper and star this repository:
 ```bibtex
-@inproceedings{kim2024transpad,
+@inproceedings{kim2024transformer,
   title={Transformer for Point Anomaly Detection},
   author={Kim, Harim and Lee, Chang Ha and Hong, Charmgil},
   booktitle={Proceedings of the 33rd ACM International Conference on Information and Knowledge Management},
-  year={2024},
+  pages={1080--1088},
+  year={2024}
 }
 ```
 
